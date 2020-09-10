@@ -14,6 +14,7 @@
     min-height: 45vh;
     text-align: center;
 }
+
 .container,
 .main {
     width: 95%;
@@ -28,12 +29,13 @@
 .menu {
     display: flex;
 }
+
 .menu-lists {
     font-family: "Merriweather", Sans-serif;
     font-weight: 500;
     margin-left: 50px;
     text-decoration: none;
-    color: #edcfa9;
+    color: #e7dec8;
     font-size: 20px;
 }
 
@@ -41,6 +43,7 @@
     width: 100px;
     height: 100px;
 }
+
 .menu-main {
     display: flex;
     align-items: center;
@@ -138,70 +141,27 @@
 .card-title {
     margin-top: 20px;
 }
-
-/* slider */
-.cards {
-    display: flex;
-    justify-content: space-around;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 40%;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.customer-name {
-    font-family: "Bitter", Sans-serif;
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-.customer-review {
-    font-family: "Roboto", Sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 25px;
-}
-.customer-read-more {
-    text-decoration: none;
-    font-size: 17px;
-}
-.cus-name{
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.cus-rev{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.cus-read{
-    text-align: end;
-}
-/* slider */
-
-/* Slider */
+/* SLIDER */
 .cards {
     display: flex;
     justify-content: space-evenly;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     transition: 0.3s;
-    width: 40%;
+    width: 100%;
+    min-height: 400px;
 }
-.card:hover {
+/* .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 .customer-name {
     font-family: "Bitter", Sans-serif;
     font-weight: 300;
     margin-bottom: 15px;
     font-size: 20px;
 }
+
 .customer-review {
     font-family: "Roboto", Sans-serif;
     font-weight: 300;
@@ -263,6 +223,7 @@
     text-decoration: none;
     transition: all 0.5s;
 }
+
 .learn-more:hover {
     text-decoration: underline;
 }
@@ -289,7 +250,6 @@ padding-bottom: 50px;
     margin-top: 42px;
     margin-bottom: 15px;
 }
-
 .address-subtitle {
     color: #ffffff;
     font-family: "Merriweather", Sans-serif;
@@ -317,7 +277,31 @@ padding-bottom: 50px;
     text-align: center;
     font-style: italic;
 }
+/* ABOUT-US */
+.about-us-header{
+    background-image: url(../img/about-us.jpg);
+}
+.about-us-title{
+    font-size: 80px;
+}
+/* SERVICES */
+.services-header{
+    background-image: url(../img/services.jpg);
+}
+/* CONTACT-US */
+.contact-us-header{
+    background-image: url(../img/contact-us.jpg);
+}
+.swiper-container {
+    width: 60%;
+    min-height: 400px;
+}
 /* media */
+@media (max-width: 813px){
+    .header-main-title{
+        line-height: 113px;
+    }
+}
 @media (max-width: 769px){
     .menu-img {
         width: 80px;
@@ -340,7 +324,7 @@ padding-bottom: 50px;
     font-size: 45px;
 }
 }
-@media (max-width: 420px){
+@media (max-width: 532px){
     .menu{
         display: none;
     }
@@ -350,6 +334,35 @@ padding-bottom: 50px;
         top: 23px;
         margin-right: -26px;
     }
+    ul li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        background: rgba(14, 13, 13, 0.95);
+        margin-top: 30px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        top: 80px;
+        right: 0;
+        text-align: center;
+        z-index: 5;
+        display: block;
+        transition: all .5s;
+    }
+    .menu-lists {
+        font-size: 24px;
+        margin-left: 0;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #fff;
+        transition: all 0.5s;
+    }
+    .menu-lists:hover{
+        color: #b08b66;
+    }
     .header-title {
     margin-top: 23px;
     }
@@ -358,6 +371,7 @@ padding-bottom: 50px;
     }
     .header-main-title {
         font-size: 47px;
+        line-height: 68px;
     }
     .header-button {
         padding: 10px 25px;
@@ -401,4 +415,66 @@ padding-bottom: 50px;
     .address-subtitle{
         line-height: 27px;
     }
+}
+
+/* our history */
+.our-history {
+    display: flex;
+}
+
+.img-history {
+    min-width: 552px;
+    height: 463px;
+    border: 10px solid #fff;
+}
+
+.description-history {
+    background-color: #000;
+    /* min-width: 660px; */
+    
+}
+
+.des-little {
+    /* min-width: 520px; */
+    height: 463px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.since {
+    color: #b08b66;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.since::after {
+    display: block;
+    content: '';
+    width: 110px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 30px;
+}
+
+.subtitle-history {
+    color: #ffffff;
+    font-family: "Oswald", Sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.history-des {
+    color: #ffffff;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 14px;
+    /* width: 100%; */
+    font-weight: 300;
+    line-height: 28px;
 }
