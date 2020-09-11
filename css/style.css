@@ -5,6 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    background-color: #f6f4e6;
+}
 
 .header {
     background-image: url(../img/home-top-bg.jpg);
@@ -141,25 +144,31 @@
 .card-title {
     margin-top: 20px;
 }
+
 /* SLIDER */
+.swiper-container {
+    width: 60%;
+    min-height: 200px;
+}
+
 .cards {
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+    max-height: max-content;
 }
+
 .card {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     transition: 0.3s;
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
 }
-/* .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
+
 .customer-name {
     font-family: "Bitter", Sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .customer-review {
@@ -169,38 +178,44 @@
     line-height: 24px;
     margin-bottom: 25px;
 }
+
 .customer-read-more {
     text-decoration: none;
     font-size: 17px;
 }
-.container{
+
+.container {
     position: relative;
 }
-.cus-name{
+
+.cus-name {
+    font-weight: bold;
     margin-top: 15px;
     margin-left: 15px;
 }
-.cus-rev{
+
+.cus-rev {
     margin-left: 15px;
     margin-right: 15px;
 }
-.cus-read{
+
+.cus-read {
     position: relative;
     bottom: 0;
     right: 0;
-    margin-bottom: 15px;
-    align-items: center;
 }
+
 .description-main {
     text-align: center;
     margin-bottom: 70px;
 }
+
 .des-subtitle {
     color: #000000;
     font-family: "Oswald", Sans-serif;
     font-size: 52px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .description {
@@ -227,18 +242,20 @@
 .learn-more:hover {
     text-decoration: underline;
 }
+
 /* footer */
 #footer {
     background-color: #000;
     min-height: 250px;
-padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .contact {
     display: flex;
     justify-content: space-around;
 }
-.left-space{
+
+.left-space {
     margin-right: 20px;
 }
 
@@ -250,6 +267,7 @@ padding-bottom: 50px;
     margin-top: 42px;
     margin-bottom: 15px;
 }
+
 .address-subtitle {
     color: #ffffff;
     font-family: "Merriweather", Sans-serif;
@@ -259,6 +277,7 @@ padding-bottom: 50px;
     line-height: 30px;
 
 }
+
 .icon {
     color: #fff;
     margin-right: 10px;
@@ -266,179 +285,59 @@ padding-bottom: 50px;
     margin-top: 15px;
     cursor: pointer;
 }
-.copyright{
+
+.copyright {
     position: relative;
     bottom: 0;
     margin-top: 35px;
     margin-bottom: 15px;
 }
-.copy-text{
+
+.copy-text {
     color: #fff;
     text-align: center;
     font-style: italic;
 }
+
 /* ABOUT-US */
-.about-us-header{
+.about-us-header {
     background-image: url(../img/about-us.jpg);
+    margin-bottom: 40px;
 }
-.about-us-title{
+
+.about-us-title {
     font-size: 80px;
 }
-/* SERVICES */
-.services-header{
-    background-image: url(../img/services.jpg);
-}
-/* CONTACT-US */
-.contact-us-header{
-    background-image: url(../img/contact-us.jpg);
-}
-.swiper-container {
-    width: 60%;
-    min-height: 400px;
-}
-/* media */
-@media (max-width: 813px){
-    .header-main-title{
-        line-height: 113px;
-    }
-}
-@media (max-width: 769px){
-    .menu-img {
-        width: 80px;
-        height: 80px;
-    }
-    .menu-lists{
-        margin-left: 30px;
-        font-size: 18px;
-    }
-    .header-description {
-        font-size: 23px;
-    }
-    .header-main-title {
-        font-size: 70px;
-}
-#slider{
-    width: 80%;
-}
-.des-subtitle {
-    font-size: 45px;
-}
-}
-@media (max-width: 532px){
-    .menu{
-        display: none;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 23px;
-        margin-right: -26px;
-    }
-    ul li:not(:last-child) {
-        margin-bottom: 20px;
-    }
 
-    .menu {
-        position: fixed;
-        width: 100%;
-        background: rgba(14, 13, 13, 0.95);
-        margin-top: 30px;
-        padding-bottom: 40px;
-        padding-top: 40px;
-        top: 80px;
-        right: 0;
-        text-align: center;
-        z-index: 5;
-        display: block;
-        transition: all .5s;
-    }
-    .menu-lists {
-        font-size: 24px;
-        margin-left: 0;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        color: #fff;
-        transition: all 0.5s;
-    }
-    .menu-lists:hover{
-        color: #b08b66;
-    }
-    .header-title {
-    margin-top: 23px;
-    }
-    .header-description {
-        font-size: 21px;
-    }
-    .header-main-title {
-        font-size: 47px;
-        line-height: 68px;
-    }
-    .header-button {
-        padding: 10px 25px;
-        margin-top: 27px;
-    }
-    .header-button-services {
-        font-size: 13px;
-    }
-    #slider {
-        width: 90%;
-    }
-    .introduction{
-        font-size: 16px;
-    }
-    .customer-name {
-        margin-bottom: 10px;
-        font-size: 18px;
-    }
-    .customer-review {
-        font-size: 13px;
-        line-height: 21px;
-        margin-bottom: 20px;
-    }
-    .des-subtitle {
-        font-size: 30px;
-    }
-    .description {
-        font-size: 14px;
-        letter-spacing: 2px;
-        line-height: 21px;
-        margin-bottom: 26px;
-    }
-    .contact{
-        flex-direction: column;
-    }
-    .address-title {
-        font-size: 21px;
-        margin-top: 21px;
-        margin-bottom: 10px;
-    }
-    .address-subtitle{
-        line-height: 27px;
-    }
+/* video slider */
+.about-video {
+    width: 80%;
+    margin-bottom: 30px;
 }
 
 /* our history */
 .our-history {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .img-history {
     min-width: 552px;
     height: 463px;
-    border: 10px solid #fff;
 }
 
 .description-history {
+    display: inline;
     background-color: #000;
-    /* min-width: 660px; */
-    
+    padding: 20px;
+    min-width: 440px;
 }
 
 .des-little {
-    /* min-width: 520px; */
-    height: 463px;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding: 15px;
+    word-break: break-all;
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
 }
 
 .since {
@@ -477,4 +376,378 @@ padding-bottom: 50px;
     /* width: 100%; */
     font-weight: 300;
     line-height: 28px;
+}
+
+/* SERVICES */
+.services-header {
+    background-image: url(../img/services.jpg);
+}
+
+/* CONTACT-US */
+.contact-us-header {
+    background-image: url(../img/contact-us.jpg);
+}
+
+.contacts-form {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.phone-address {
+    margin-bottom: 35px;
+}
+
+.phone-title {
+    margin-bottom: 15px;
+}
+
+.phone-number {
+    color: #000000;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 5.2px;
+}
+
+.contact-title {
+    margin-top: 30px;
+}
+
+.input-contact {
+    margin: 0px 0px 0px 0px;
+    padding: 1px 50px 1px 50px;
+    background-color: #f9f9f7;
+    margin-top: 40px;
+    flex-direction: column;
+    display: flex;
+}
+
+.input-1 {
+    padding: 10px 0px 10px 10px;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 1.4px;
+    color: #555555;
+    background-color: #f9f9f7;
+    opacity: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    font-family: "Merriweather", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #000000;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #000000;
+    line-height: 2;
+    min-height: 2rem;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* iframe {
+    min-width: 990px;
+    height: 420px;
+} */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.graphic {
+    background-image: url(../img/contactus-bottom.jpg);
+    background-position: center top 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.graphic-title {
+    color: #b59478;
+    font-family: "Oswald", Sans-serif;
+    font-size: 52px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.window {
+    font-size: 30px;
+    color: #fff;
+}
+
+.time-day {
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+
+.time {
+    color: #ffffff;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 2.1em;
+    letter-spacing: 1.9px;
+}
+
+/* media */
+
+@media (max-width: 813px) {
+    .header-main-title {
+        line-height: 113px;
+    }
+}
+
+@media (max-width: 769px) {
+    .menu-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-lists {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+
+    .header-description {
+        font-size: 23px;
+    }
+
+    .header-main-title {
+        font-size: 70px;
+    }
+
+    #slider {
+        width: 80%;
+    }
+
+    .des-subtitle {
+        font-size: 45px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .our-history {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 532px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 23px;
+        margin-right: -26px;
+    }
+
+    ul li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        background: rgba(14, 13, 13, 0.95);
+        margin-top: 30px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        top: 80px;
+        right: 0;
+        text-align: center;
+        z-index: 5;
+        display: block;
+        transition: all .5s;
+    }
+
+
+    .menu-lists {
+        font-size: 24px;
+        margin-left: 0;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #fff;
+        transition: all 0.5s;
+    }
+
+    .menu-lists:hover {
+        color: #b08b66;
+    }
+
+    .header-title {
+        margin-top: 23px;
+    }
+
+    .header-description {
+        font-size: 21px;
+    }
+
+    .header-main-title {
+        font-size: 47px;
+        line-height: 68px;
+    }
+
+    .header-button {
+        padding: 10px 25px;
+        margin-top: 27px;
+    }
+
+    .header-button-services {
+        font-size: 13px;
+    }
+
+    #slider {
+        width: 90%;
+    }
+
+    .introduction {
+        font-size: 16px;
+    }
+
+    .customer-name {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .customer-review {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    .des-subtitle {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 21px;
+        margin-bottom: 26px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .address-title {
+        font-size: 21px;
+        margin-top: 21px;
+        margin-bottom: 10px;
+    }
+
+    .address-subtitle {
+        line-height: 27px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    #slider-about {
+        width: 100%;
+    }
+
+    .about-video {
+        min-height: 0px;
+    }
+
+    .img-history {
+        display: none;
+    }
+
+    .description-history {
+        min-width: 355px;
+    }
+
+    .since {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .subtitle-history {
+        font-size: 25px;
+    }
+
+    .history-des {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .phone-address {
+        margin-bottom: 25px;
+    }
+
+    .phone-title {
+        font-size: 15px;
+    }
+
+    .phone-number {
+        font-size: 14px;
+    }
+
+    .input-contact {
+        margin-top: 23px;
+    }
+
+    .input-1 {
+        margin-bottom: 10px;
+        padding: 7px 0px 7px 7px;
+        font-size: 13px;
+    }
+
+    .submit-button {
+        letter-spacing: 1.5px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .graphic-title {
+        font-size: 23px;
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+
+    .time-day {
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
 }
